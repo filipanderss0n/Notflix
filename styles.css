@@ -1,0 +1,371 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+body {
+    background-color: rgb(22, 22, 22);
+}
+
+nav {
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+}
+
+.container {
+    padding: 24px;
+    width: 100%
+}
+
+.row {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 12px;
+}
+
+/*
+ NAV 
+ 
+ */
+
+.nav__banner {
+    width: 60%;
+    padding: 20px;
+}
+
+.anchor__home {
+    background-color: rgb(22, 22, 22);
+    text-decoration: none;
+    border: none;
+    color: red;
+    margin-right: 248px;
+    padding-top: 12px;
+    display: flex;
+    font-weight: bold;
+    font-size: 16px;
+    width: 20px;
+    height: 20px;
+}
+
+.btn__contact {
+    background-color: rgb(22, 22, 22);
+    text-decoration: none;
+    color: red;
+    border: none;
+    margin-left: 248px;
+    padding-top: 12px;
+    display: flex;
+    font-weight: bold;
+    font-size: 16px;
+    width: 20px;
+    height: 20px;     
+}
+
+.btn__contact:hover,
+.anchor__home:hover {
+    transform: scale(1.1);
+    transition: all 300ms ease;
+}
+
+
+
+img {
+    width: 100%;
+    max-height: 120px;
+}
+
+.anchor--wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.anchor__header {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 24px;
+    color: red;
+    font-weight: bold;
+    font: 700;
+}
+
+
+.search__anchor {
+    text-decoration: none;
+    color: red;
+    font-size: 64px;
+    font-weight: 700;
+    max-width: 50%;
+    justify-content: center;
+    display: flex;
+}
+
+.search__anchor:hover {
+    text-decoration: underline;
+    position: relative;
+    transition: all 300ms ease;
+}
+
+.movie__library {
+    width: 100%;
+    max-height: 400px;
+}
+
+.notflix__search {
+    padding-top: 64px;
+    display: flex;
+    justify-content: center;
+}
+
+.notflix__input {
+    background-color: red;
+    border-radius: 12px;
+    border: 1px solid black;
+    font-size: 32px;
+}
+
+.fa-magnifying-glass{
+    color: red;
+    font-size: 28px;
+    margin-left: 24px;
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.submit__search {
+    height: 20px;
+    width: 20px;
+    background: rgb(22, 22, 22);
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.submit__search:hover {
+    cursor: pointer;
+}
+
+
+
+/* MOVIES  */
+
+
+.movies__container{
+    width: 90%;
+    height: 100%;
+    margin: 100px 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px 20px 70px;
+    border-radius: 20px;
+    display: none;
+    
+}
+
+.movie__container {
+    display: flex;
+}
+
+.movie {
+    width: calc(100% / 3);
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 32px 0;
+
+}
+
+.movie__poster {
+    height: 100%;
+    z-index: 999;
+    overflow: hidden;
+}
+
+.movie__info--container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.movie__title {
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 16px;
+    width: 100%;
+    height: min-content;
+}
+
+.movie__year {
+    font-weight: 400;
+    font-size: 24px;
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+
+/* LANDING PAGE */
+
+.landing__container {
+    width: 100%;
+    padding: 100px 80px;
+    height: calc(100% + 80px);
+    top: -80px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.movieflix__title {
+    margin-top: 180px;
+    font-size: 100px;
+    height: min-content;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    text-shadow: 3px 3px 3px black;
+}
+
+.movieflix__description {
+    font-size: 26px;
+    max-width: 600px;
+    margin-top: 40px;
+    color: black;
+  }
+
+  .movieflix__input {
+    background-color: black;
+    height: 50px;
+    width: 100%;
+    margin-right: 20px;
+    outline: none;
+    border: 2px solid #f8f8f8;
+    padding: 10px 20px;
+    font-size: 20px;
+    color: #f8f8f8;
+  }
+
+  .movieflix__input::placeholder{
+    color: #f8f8f8;
+  }
+
+  .movieflix__search {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    max-width: 580px;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .search {
+    margin-right: 20px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 300ms all ease;
+    
+    }
+
+  .submit__button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+  }
+
+/* LOADING STATE */
+
+.movie__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+}
+
+.movie__overlay--loading {
+    font-size: 80px;
+}
+
+.movie__overlay--visible {
+    z-index: 1;
+    display: flex;
+}
+
+.fa-spinner {
+    animation: spinner 750ms infinite linear;
+}
+
+@keyframes spinner {
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+/* RESPONSIVENESS */
+
+@media (max-width: 3000px) {
+    .movie__container{
+        width: calc(100% / 3);
+    }
+}
+
+@media (max-width: 1200px) {
+    .movie__container{
+        width: calc(100% / 2);
+    }
+}
+
+@media (max-width: 768px) {
+    .img__placeholder {
+        background-attachment: fixed;
+    }
+
+    .nav__link--list {
+        display: none;
+    }
+
+    .movies__container {
+        flex-direction: column;
+       padding-right: 100px;
+    }
+
+}
