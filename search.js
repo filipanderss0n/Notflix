@@ -1,16 +1,18 @@
-const movieListEl = document.querySelector(".movie__container")
+const movieListEl = document.querySelector(".movies__container")
+const landingContainerEl = document.querySelector(".landing__container");
 
-async function searchBarForm() {
-    const movies = await fetch (`https://www.omdbapi.com/?apikey=54341e23&s=fast`)
+
+async function searchBarForm(event) {
+    const movieValue = event.target.value;
+    const movies = await fetch (`https://www.omdbapi.com/?apikey=54341e23&s=${movieValue}`)
     const moviesData = await movies.json()
     movieListEl.innerHTML = moviesData.Search.map((movie) => moviesHMTL(movie)).join("")
 }
 
-searchBarForm()
 
-function moviesHMTL(movie) {
-    return `
-     <div class="movie">
+function moviesHTML(movie) {
+    return `<div class="movie__container">
+    <div class="movie">
         <div class="movie__poster">
             <img src=${movie.Poster} class="movie__poster--img" alt="">
         </div>
@@ -21,7 +23,6 @@ function moviesHMTL(movie) {
     </div>
 </div>`;
 }
-
 
 
 

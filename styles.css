@@ -235,73 +235,7 @@ img {
     padding: 100px 80px;
     height: calc(100% + 80px);
     top: -80px;
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
-
-.movieflix__title {
-    margin-top: 180px;
-    font-size: 100px;
-    height: min-content;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    text-shadow: 3px 3px 3px black;
-}
-
-.movieflix__description {
-    font-size: 26px;
-    max-width: 600px;
-    margin-top: 40px;
-    color: black;
-  }
-
-  .movieflix__input {
-    background-color: black;
-    height: 50px;
-    width: 100%;
-    margin-right: 20px;
-    outline: none;
-    border: 2px solid #f8f8f8;
-    padding: 10px 20px;
-    font-size: 20px;
-    color: #f8f8f8;
-  }
-
-  .movieflix__input::placeholder{
-    color: #f8f8f8;
-  }
-
-  .movieflix__search {
-    margin-top: 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: transparent;
-    max-width: 580px;
-    width: 100%;
-    padding: 10px;
-  }
-
-  .search {
-    margin-right: 20px;
-    font-size: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 300ms all ease;
-    
-    }
-
-  .submit__button{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: none;
-    background-color: transparent;
-  }
 
 /* LOADING STATE */
 
@@ -340,32 +274,4 @@ img {
     }
 }
 
-/* RESPONSIVENESS */
 
-@media (max-width: 3000px) {
-    .movie__container{
-        width: calc(100% / 3);
-    }
-}
-
-@media (max-width: 1200px) {
-    .movie__container{
-        width: calc(100% / 2);
-    }
-}
-
-@media (max-width: 768px) {
-    .img__placeholder {
-        background-attachment: fixed;
-    }
-
-    .nav__link--list {
-        display: none;
-    }
-
-    .movies__container {
-        flex-direction: column;
-       padding-right: 100px;
-    }
-
-}
