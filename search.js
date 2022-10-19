@@ -6,7 +6,14 @@ async function searchBarForm(event) {
     const movieValue = event.target.value;
     const movies = await fetch (`https://www.omdbapi.com/?apikey=54341e23&s=${movieValue}`)
     const moviesData = await movies.json()
-    movieListEl.innerHTML = moviesData.Search.map((movie) => moviesHMTL(movie)).join("")
+
+    if (!moviesData.Search) {
+        document.body.classList.remove("movie__overlay--visible")
+    }
+    else {
+        document.body.classlist += " movie_overlay--visible"
+    }
+    movieListEl.innerHTML = moviesData.Search.map((movie) => moviesHTML(movie)).join("")
 }
 
 

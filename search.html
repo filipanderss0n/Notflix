@@ -20,49 +20,50 @@
     <div class="landing__container">
         <div class="row">
             <h2 class="anchor__header">Find Your Movie</h2>
-            <form class="notflix__search" onsubmit="searchBarForm(event)">
-                <input class="notflix__input" placeholder="Movie Name" onchange="searchBarForm(event)" type="text">
+            <form class="notflix__search" onclick="searchBarForm(event)">
+                <input class="notflix__input" placeholder="Movie Name" onevent="searchBarForm(event)" type="text">
                 <button class="submit__search" onclick="searchBarForm(event)" type="submit" >  
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </button>
             </form>
-            <div class="movies__container">
-                <div class="movie__container">
-                    <div class="movie">
-                        <div class="movie__poster">
-                            <img src="" class="movie__poster--img" alt="">
-                        </div>
-                        <div class="movie__info--container">
-                            <div class="movie__title"></div>
-                            <div class="movie__year"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="movie__container">
-                    <div class="movie">
-                        <div class="movie__poster">
-                            <img src="" class="movie__poster--img" alt="">
-                        </div>
-                        <div class="movie__info--container">
-                            <div class="movie__title"></div>
-                            <div class="movie__year"></div>
+            <div class="movie__overlay--visible">
+                <div class="movies__container">
+                    <div class="movie__container">
+                        <div class="movie">
+                            <div class="movie__poster">
+                                <img src="" class="movie__poster--img" alt="">
+                            </div>
+                            <div class="movie__info--container">
+                                <div class="movie__title"></div>
+                                <div class="movie__year"></div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="movie__container">
-                    <div class="movie">
-                        <div class="movie__poster">
-                            <img src="" class="movie__poster--img" alt="">
-                        </div>
-                        <div class="movie__info--container">
-                            <div class="movie__title"></div>
-                            <div class="movie__year"></div>
+                    <div class="movie__container">
+                        <div class="movie">
+                            <div class="movie__poster">
+                                <img src="" class="movie__poster--img" alt="">
+                            </div>
+                            <div class="movie__info--container">
+                                <div class="movie__title"></div>
+                                <div class="movie__year"></div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="movie__container">
-                    <div class="movie">
-                        <div class="movie__poster">
+                    <div class="movie__container">
+                        <div class="movie">
+                            <div class="movie__poster">
+                                <img src="" class="movie__poster--img" alt="">
+                            </div>
+                            <div class="movie__info--container">
+                                <div class="movie__title"></div>
+                                <div class="movie__year"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movie__container">
+                        <div class="movie">
+                            <div class="movie__poster">
                             <img src="" class="movie__poster--img" alt="">
                         </div>
                         <div class="movie__info--container">
@@ -94,8 +95,9 @@
                     </div>
                 </div>
             </div>
+            </div>
         </div>
     </div>
-
+    
 </body>
 </html>
